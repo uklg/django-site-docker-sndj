@@ -1,0 +1,66 @@
+from django.views.generic import TemplateView
+from .forms import ContactForm
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, redirect
+
+
+
+class HomePageView(TemplateView):
+    template_name = 'home.html'
+
+class AboutPageView(TemplateView):
+    template_name = 'about.html'
+
+class DemolitionPageView(TemplateView):
+    template_name = 'demolition.html'
+
+# TODO add expect to docker compose
+
+
+
+
+def contactViewD(request):
+    if request.method == 'GET':
+        form = ContactForm()
+
+    else:
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['admin@example.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('demolition')
+            #form='blah'
+    return render(request, "demolition.html", {'form': form})
+
+def successViewD(request):
+    return render(request, "demolition.html", {'form': form})
+    return HttpResponse('Success! Thank you for your message. ')
+
+def data_flair(request):
+    return redirect('/static/services.html')
+
+
+def baseView(request):
+    return render(request, "base.html")
+
+def templateView(request):
+    return render(request, "appTemplate.html")
+
+def faqsView(request):
+    return render(request, "faqs.html")
+
+#todo  add a success that says thanks we will be in touch
+
+# todo consolidate the repo and merge djpp into main if only one repo needed. update build
+# todo css for form
+# todo redirects for sensible access to flatter urls ceo like /demolition/ or /contact/
+# todo add emails
+# todo add logs
+# todo script that uses soup to gradb urls then a find replace to reploce them (needs to be in different dir from templates error for some reason)
+

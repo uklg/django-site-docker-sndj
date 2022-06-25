@@ -1,0 +1,15 @@
+# Pull base image
+FROM python:3.8
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+# Set work directory
+WORKDIR /code
+## Install dependencies
+COPY Pipfile Pipfile.lock /code/
+RUN pip install pipenv && pipenv install --system
+RUN pip install whitenoise
+RUN pip install django-debug-toolbar
+RUN pip install sendgrid
+## Copy project
+COPY . /code/

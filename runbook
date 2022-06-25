@@ -1,0 +1,25 @@
+follow chapter one of 3.1 djangos for professionals
+
+if already built the image with docker build .
+
+use
+
+docker-compose up --build
+
+note the extra --build it will do all the work of building on the fly
+
+django-compose up
+djange-compose up --build
+django-compose down
+
+can update on the fly the app and it dynamically restarts on any change
+
+
+
+curl http://127.0.0.1:8000/
+Hello World-D!(hello-6vy1Jeie) rm@mini:~/docker/code/hello$ 
+
+todo
+white noise needs a rebuild to pick up all of the files that are now in staticfiles (not dynamic there maybe a setting but it is a security risk)
+
+build this possible by having  a build script that imports contents of staticfiles and a .gitignore for those contents they may need to be in a sub folder

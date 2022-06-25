@@ -1,0 +1,51 @@
+#!/bin/bash
+
+set -e
+
+if [ ! -f /tmp/build-dsd-fw ]
+then
+    echo 'no firewall yet'
+    sudo iptables -I INPUT 2 -i lo -p tcp --dport 8001 -j ACCEPT
+    touch /tmp/build-dsd-fw
+
+else
+    echo 'firewall in place'
+
+
+fi
+
+
+# this is using a different branch for now
+rsync -avz ~/Documents/jmdemolition.co.uk.all.app/html/ ./staticfiles
+
+
+
+
+echo copy the built item into templates it will then by dynamically build by docker run
+
+cp staticfiles/demolition.html.template pages/templates/demolition.html
+cp staticfiles/base.html.template pages/templates/base.html
+cp staticfiles/appTemplate.html.template pages/templates/appTemplate.html
+cp staticfiles/base.html.template pages/templates/base.html
+cp staticfiles/faqs.html.template pages/templates/faqs.html
+cp staticfiles/index.html.tempate pages/templates/index.html
+cp staticfiles/services.html.template pages/templates/services.html
+cp staticfiles/contact.html.template pages/templates/contact.html
+cp staticfiles/feedback.html.template pages/templates/feedback.html
+cp staticfiles/gallery.html.template pages/templates/gallery.html
+
+
+#todo copy a secrets directory and fail if it does not exist (could be param with environment name, staging live etc)
+
+
+
+
+
+
+docker build .
+
+
+firefox http://127.0.0.1:8001/demolition/
+
+docker-compose up --build
+

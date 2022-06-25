@@ -25,7 +25,7 @@ https://www.tooplate.com/view/2126-antique-cafe
 </head>
 <body>    
     <!-- Intro -->
-    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-01.jpg">
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="{% static "img/antique-cafe-bg-01.jpg" %}">
         <nav id="tm-nav" class="fixed w-full">
             <div class="tm-container mx-auto px-2 md:py-6 text-right">
                 <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
@@ -197,9 +197,9 @@ https://www.tooplate.com/view/2126-antique-cafe
         </div>        
     </div>    
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="{% static "js/jquery-3.6.0.min.js" %}"></script>
+    <script src="{% static "js/parallax.min.js" %}"></script>
+    <script src="{% static "js/jquery.singlePageNav.min.js" %}"></script>
     <script>
 
         function checkAndShowHideMenu() {

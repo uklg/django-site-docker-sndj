@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+    <link rel="stylesheet" href="{% static "css/all.min.css" %}"> <!-- fontawesome -->
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+    <link rel="stylesheet" href="{% static "css/tailwind.css" %}">
+    <link rel="stylesheet" href="{% static "css/tooplate-antique-cafe.css" %}">
     
 <!--
 
@@ -60,7 +62,7 @@ https://www.tooplate.com/view/2126-antique-cafe
         </div>        
     </div>
     <!-- Cafe Menu -->
-    <div id="whatwedo" class="parallax-window" data-parallax="scroll" data-image-src="img/pexels-eberhard-grossgasteiger-12486830.jpg">
+    <div id="whatwedo" class="parallax-window" data-parallax="scroll" data-image-src="{% static "img/pexels-eberhard-grossgasteiger-12486830.jpg" %}">
         <div class="container mx-auto tm-container py-24 sm:py-48">
             <div class="text-center mb-16">
                 <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">What we do</h2>

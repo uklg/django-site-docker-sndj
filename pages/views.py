@@ -55,7 +55,7 @@ def contactViewD(request):
             submit_message = form.cleaned_data['submit_message']
             try:
                 if settings.DEBUG:
-                    send_mail(submit_name, submit_email, submit_number, submit_message, ['admin@example.com'])
+                    print(submit_name, submit_email, submit_number, submit_message, ['admin@example.com'])
                 else:
                     #pass
                     def getsendmailapikey():
@@ -89,7 +89,7 @@ def contactViewD(request):
                 return HttpResponse('Invalid header found.')
             return redirect('demolition')
             #form='blah'
-    return render(request, "demolition.html", {'form': form, 'current_url': current_url})
+    return render(request, "index.html", {'form': form, 'current_url': current_url})
 
 def successViewD(request):
     return render(request, "demolition.html", {'form': form})

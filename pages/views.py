@@ -10,32 +10,6 @@ from sendgrid.helpers.mail import Mail
 from django.urls import resolve
 
 
-#class HomePageView(TemplateView):
-#    template_name = 'home.html'
-
-#class AboutPageView(TemplateView):
-#    template_name = 'index.html'
-
-def AboutPageView(request):
-    return render(request, "index.html", {'current_url': resolve(request.path_info).url_name})
-
-
-def ServicePageView(request):
-    return render(request, "services.html", {'current_url': resolve(request.path_info).url_name})
-
-
-
-def ContactPageView(request):
-    return render(request, "contact.html", {'current_url': resolve(request.path_info).url_name})
-
-def FeedbackPageView(request):
-    return render(request, "feedback.html", {'current_url': resolve(request.path_info).url_name})
-
-def GalleryPageView(request):
-    return render(request, "gallery.html", {'current_url': resolve(request.path_info).url_name})
-
-
-
 # TODO add expect to docker compose
 
 
@@ -91,34 +65,8 @@ def contactViewD(request):
             #form='blah'
     return render(request, "index.html", {'form': form, 'current_url': current_url})
 
-def successViewD(request):
-    return render(request, "demolition.html", {'form': form})
-    return HttpResponse('Success! Thank you for your message. ')
-
-def data_flair(request):
-    return redirect('/static/services.html')
-
-
-def baseView(request):
-    return render(request, "base.html")
-
-def templateView(request):
-    return render(request, "appTemplate.html")
-
-#def faqsView(request):
-#    return render(request, "faqs.html")
-
-def faqsView(request):
-    return render(request, "faqs.html", {'current_url': resolve(request.path_info).url_name})
-
-
 
 #todo  add a success that says thanks we will be in touch
 
-# todo consolidate the repo and merge djpp into main if only one repo needed. update build
-# todo css for form
-# todo redirects for sensible access to flatter urls ceo like /demolition/ or /contact/
-# todo add emails
 # todo add logs
-# todo script that uses soup to gradb urls then a find replace to reploce them (needs to be in different dir from templates error for some reason)
 

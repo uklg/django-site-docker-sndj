@@ -1,5 +1,0 @@
-<h2>Basic File Inheritence</h2>
-{% block <block_name> %}
-    <p> PlaceHolder to be Replaced</p>
-{% endblock %}
-

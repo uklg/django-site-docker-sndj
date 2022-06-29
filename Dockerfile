@@ -11,5 +11,7 @@ RUN pip install pipenv && pipenv install --system
 RUN pip install whitenoise
 RUN pip install django-debug-toolbar
 RUN pip install sendgrid
+RUN apt-get update
+RUN apt-get install expect -y
 ## Copy project
 COPY . /code/

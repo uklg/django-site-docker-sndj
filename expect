@@ -1,0 +1,16 @@
+#!/usr/bin/expect
+
+# this needs 
+# sudo apt-get install expect -f
+
+
+
+set timeout 20
+
+spawn "./create-superuser.sh"
+
+# probably can getaway with just help
+expect "Password: " { send "mysecretpassword\r" }
+expect "Password (again): " { send "mysecretpassword\r" }
+
+interact

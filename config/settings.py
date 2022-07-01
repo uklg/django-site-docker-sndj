@@ -151,3 +151,12 @@ if DEBUG:
 # Allows non debug css to work for /admin
 WHITENOISE_STATIC_PREFIX = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/' 
+
+#STATICFILES_DIRS = [
+#                   '/usr/local/lib/python3.8/site-packages/django/contrib/admin/static/'
+#]
+
+STATICFILES_DIRS = [
+                   '/code/staticfiles-to-build'
+]
+

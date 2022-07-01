@@ -29,5 +29,5 @@ COPY . /code/
 
 RUN /code/manage.py makemigrations
 RUN /code/manage.py migrate
-#RUN /code/expect
+RUN /code/expect
 RUN /code/manage.py collectstatic

@@ -10,4 +10,4 @@ attach to latest container
 
 cp -pr /usr/local/lib/python3.8/site-packages/django/contrib/admin /app/staticfiles/
 
-Now these files can be added to the admin and added to git
+Now these files can be added to the admin and added to git locally as they are in the repo now

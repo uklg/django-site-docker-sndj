@@ -22,7 +22,7 @@ fi
 
 
 
-docker build .
+docker build -t django-site-docker-hcccm .
 
 
 firefox http://127.0.0.1:8002/

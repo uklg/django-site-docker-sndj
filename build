@@ -5,7 +5,7 @@ set -e
 if [ ! -f /tmp/build-dsd-fw2 ]
 then
     echo 'no firewall yet'
-    sudo iptables -I INPUT 2 -i lo -p tcp --dport 8002 -j ACCEPT
+    sudo iptables -I INPUT 2 -i lo -p tcp --dport 8000:8999 -j ACCEPT
     touch /tmp/build-dsd-fw2
 
 else
@@ -24,7 +24,7 @@ fi
 
 docker build -t django-site-docker-hcccm .
 
-
+echo 'css may take a while to start so wait 5 seconds'
 firefox http://127.0.0.1:8002/
 
 docker-compose up --build

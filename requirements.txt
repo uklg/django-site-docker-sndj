@@ -1,2 +1,5 @@
 django==3.1.14
+whitenoise
+django-debug-toolbar
+sendgrid
 # using 4.0.5

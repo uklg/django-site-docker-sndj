@@ -157,6 +157,6 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 #]
 
 STATICFILES_DIRS = [
-                   '/code/staticfiles-to-build'
+                   BASE_DIR / 'staticfiles-to-build'
 ]
 

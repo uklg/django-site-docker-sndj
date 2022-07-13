@@ -31,3 +31,7 @@ RUN /code/manage.py makemigrations
 RUN /code/manage.py migrate
 RUN /code/expect
 RUN /code/manage.py collectstatic
+
+EXPOSE 8000
+
+CMD ["/code/manage.py", "runserver", "0.0.0.0:8000"]

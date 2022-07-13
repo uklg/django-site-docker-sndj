@@ -1,0 +1,31 @@
+needs to be live with lb
+
+the database file is old and is not being updated by expect and has username etc here
+
+
+the staticfiles is not being updated. when fixed it may not need the hackish css from the package for debug admin css
+
+/app/expect
+
+WARNINGS:
+?: (urls.W005) URL namespace 'djdt' isn't unique. You may not be able to reverse all URLs in this namespace
+Password: 
+Password (again): 
+Superuser created successfully.
+
+
+
+now can login but db.sqlite3 shared between runs (add to build so it moves db.sqlite3 to a timestamp )
+
+basically the docker compose part does not execute any commands that work on the containers ok apart from the run app bit need to work out why.
+
+maybe look at other examples in github for example 
+
+this di done but using /code rather than /app which is mounted by compose
+
+so now need a way to check file changes and update the daemon there is a method 
+
+add remove db switch in build and maybe a no rebuild option (look at repo)
+https://github.com/morninj/django-docker/blob/master/config.ini.sample
+
+rejig dockerfile to see if it can be quicker frequent changes right at bottom if possible

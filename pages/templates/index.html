@@ -315,10 +315,10 @@ http://www.tooplate.com/view/2109-the-card
       </div>
     </div>
 
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/background.cycle.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="{% static "js/jquery-1.11.0.min.js" %}"></script>
+    <script src="{% static "js/background.cycle.js" %}"></script>
+    <script src="%{ static "slick/slick.min.js" %} "></script>
+    <script src="%{ static "js/jquery.magnific-popup.min.js" %}"></script>
     <script>
       let slickInitDone = false;
       let previousImageId = 0,

@@ -1,250 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antique Bakery Cafe HTML Template by Tooplate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
-    
-<!--
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-Tooplate 2126 Antique Cafe
-
-https://www.tooplate.com/view/2126-antique-cafe
-
+    <title>The Card HTML5 Template by tooplate.com</title>
+    <!--
+Template 2109 The Card
+http://www.tooplate.com/view/2109-the-card
 -->
-</head>
-<body>    
-    <!-- Intro -->
-    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-01.jpg">
-        <nav id="tm-nav" class="fixed w-full">
-            <div class="tm-container mx-auto px-2 md:py-6 text-right">
-                <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
-                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
-                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#whatwedo" class="tm-text-gold py-1 md:py-3 px-4">What We Do</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Contact</a></li>
-                </ul>
-            </div>            
+    <!-- load CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+    />
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/tooplate-style.css" />
+    <!-- Templatemo style -->
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="tm-main-container">
+      <div class="tm-top-container">
+        <!-- Menu -->
+        <nav id="tmNav" class="tm-nav">
+          <a class="tm-navbar-menu" href="#">Menu</a>
+          <ul class="tm-nav-links">
+            <li class="tm-nav-item active">
+              <a href="#" data-linkid="0" data-align="right" class="tm-nav-link">Intro</a>
+            </li>
+            <li class="tm-nav-item">
+              <a href="#" data-linkid="1" data-align="right" class="tm-nav-link">About</a>
+            </li>
+            <li class="tm-nav-item">
+              <a
+                href="#"
+                data-linkid="2"
+                data-align="middle"
+                class="tm-nav-link">Work</a>
+            </li>
+            <li class="tm-nav-item">
+              <a href="#" data-linkid="3" data-align="left" class="tm-nav-link">Contact</a>
+            </li>
+            <li class="tm-nav-item">
+              <a
+                rel="nofollow" href="https://fb.com/tooplate"
+                class="tm-nav-link external">External</a>
+            </li>
+          </ul>
         </nav>
-        <div class="container mx-auto px-2 tm-intro-width">
-            <div class="sm:pb-60 sm:pt-48 py-20">
-                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
-                	  <h2 class="text-white text-5xl tm-logo-font mb-5">Holly Caston</h2>
-                    <h2 class="text-white text-4xl tm-logo-font mb-5">Child Minder</h2>
-                    <p class="tm-text-gold tm-text-2xl">Ofsted registered</p>
-                </div>    
-                <div class="bg-black bg-opacity-70 p-10 mb-5">
-                    <p class="text-white leading-8 text-sm font-light">
-                        Include picking up from Peter Chanel and Hope schools in Footscray, Sidcup.
-                        Meals made to likes and dislikes. Dropping off and picking up from after school clubs.
-                    	If you have any question, please <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">send us a message</a>. </p>
-                </div>
-                <div class="text-center">
-                    <div class="inline-block">
-                        <a href="#whatwedo" class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
-                            <i class="fas fa-coffee mr-3"></i>
-                            <span>Let's explore...</span>                        
-                        </a>
-                    </div>                    
-                </div>                
-            </div>
-        </div>        
-    </div>
-    <!-- Cafe Menu -->
-    <div id="whatwedo" class="parallax-window" data-parallax="scroll" data-image-src="img/pexels-eberhard-grossgasteiger-12486830.jpg">
-        <div class="container mx-auto tm-container py-24 sm:py-48">
-            <div class="text-center mb-16">
-                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">What we do</h2>
-            </div>            
-            <div class="flex flex-col lg:flex-row justify-around items-center">
-                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <img src="img/menu-item-1.jpg" alt="Image" class="rounded-md">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Home cooked dinners</h3>
-                            <div class="text-white text-md sm:text-lg font-light mb-1">S $8.50</div>
-                            <div class="text-white text-md sm:text-lg font-light">L $10.50</div>
-                        </div>                    
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <img src="img/menu-item-2.jpg" alt="Image" class="rounded-md">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Help with homework</h3>
-                            <div class="text-white text-md sm:text-lg font-light mb-1">S $9.50 . BG #544639</div>
-                            <div class="text-white text-md sm:text-lg font-light">L $12.50</div>
-                        </div>                    
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <img src="img/menu-item-3.jpg" alt="Image" class="rounded-md">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Trips to park and excursions</h3>
-                            <div class="text-white text-md sm:text-lg font-light mb-1">M $11.75</div>
-                            <div class="text-white text-md sm:text-lg font-light">L $14.75</div>
-                        </div>                    
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <img src="img/menu-item-4.jpg" alt="Image" class="rounded-md">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">School runs via car</h3>
-                            <div class="text-white text-md sm:text-lg font-light">Size M $11.75 . L $14.75</div>
-                        </div>                    
-                    </div>
-                </div>
-                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
-                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
-                        <div class="text-right mr-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Birthday Parties</h3>
-                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $10</div>
-                            <div class="text-white text-md sm:text-lg font-light">Large $15</div>
-                        </div>
-                        <img src="img/menu-item-5.jpg" alt="Image" class="rounded-md">                   
-                    </div>
-                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
-                        <div class="text-right mr-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hot tub or similar in the summer</h3>
-                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $12.50</div>
-                            <div class="text-white text-md sm:text-lg font-light">Large $16.50</div>
-                        </div>
-                        <img src="img/menu-item-6.jpg" alt="Image" class="rounded-md">                    
-                    </div>
-                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
-                        <div class="text-right mr-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Arts and cooking</h3>
-                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $14</div>
-                            <div class="text-white text-md sm:text-lg font-light">Large $18</div>
-                        </div>   
-                        <img src="img/menu-item-7.jpg" alt="Image" class="rounded-md">                 
-                    </div>
-                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">                    
-                        <div class="text-right mr-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Nature trails</h3>
-                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $14</div>
-                            <div class="text-white text-md sm:text-lg font-light">Large $18</div>
-                        </div> 
-                        <img src="img/menu-item-7.jpg" alt="Image" class="rounded-md">                   
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-03.jpg">
-        <div class="container mx-auto tm-container py-24 sm:py-48">
-            <div class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
-                <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
-                    <h2 class="mb-6 tm-text-green text-4xl font-medium">About the child minding</h2>
-                    <p class="mb-6 text-base leading-8">
-                        I have been an Ofsted registered and regularly checked early years childminder for more than ten years. I have taken multiple sets of children including siblings from before starting primary school to starting secondary school. I have the experience and skills to get results.
+
+        <!-- Site header -->
+        <header class="tm-site-header-box tm-bg-dark">
+          <h1 class="tm-site-title">The Card</h1>
+          <p class="mb-0 tm-site-subtitle">Free HTML Template for you</p>
+        </header>
+      </div>
+      <!-- tm-top-container -->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Site content -->
+            <div class="tm-content">
+              <!-- Section 0 Introduction -->
+              <section class="tm-section tm-section-0">
+                <h2 class="tm-section-title mb-3 font-weight-bold">
+                  Introduction
+                </h2>
+                <div class="tm-textbox tm-bg-dark">
+                  <p>
+                    The Card template is last updated on 21 May 2019. Read More button is linked to second page. You can try it now. External link button is added on main menu.
                   </p>
-                    <p class="text-base leading-8">
-                        <h3 class="mb-6 tm-text-green text-4xl font-medium">Reviews:</h3> Holly is a great childminder and she looked after my siblings for several years with great reliability and built up a connection. Anne M 5/5
-                   </p>
+                  <p class="mb-0">
+                    Please tell your friends about Tooplate for free templates. This is 70% alpha background.
+                  </p>
                 </div>
-                <a href="#contact" class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
-                    <i class="far fa-comments mr-4"></i>
-                    Contact
-                </a>
-            </div>           
-        </div>        
-    </div>
-    <div id="contact" class="parallax-window relative" data-para llax="scroll" data-image-src="img/antique-cafe-bg-04.jpg">
-        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
-            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
-                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
-                    <h2 class="text-3xl mb-6 tm-text-green">Contact Us</h2>
-                    <p class="mb-6 text-lg leading-8">
-                       Please get in contact today for  your childcare requirements.
-                       You can relax in the knowledge of a job well done.  
-                    </p>
-                    <p class="mb-10 text-lg">
-                        <span class="block mb-2">Tel: <a href="tel:07707262517" class="hover:text-yellow-600 transition">07707 262 517</a></span>
-                        <span class="block">Email: <a href="mailto:hollycaston@googlemail.com" class="hover:text-yellow-600 transition">hollycaston@googlemail.com</a></span>                        
-                    </p>
-                    <div class="text-center">
-                        <a href="https://www.google.co.uk/maps/@51.4161964,0.1234186,15.87z" class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green">
-                            <i class="fas fa-map-marked-alt mr-8"></i>
-                            Open Maps
-                        </a>
-                    </div>                    
+                <a href="#" id="tm_about_link" data-linkid="1" class="tm-link">Read More</a>
+              </section>
+
+              <!-- Section 1 About Me -->
+              <section class="tm-section tm-section-1">
+                <div class="tm-textbox tm-textbox-2 tm-bg-dark">
+                  <h2 class="tm-text-blue mb-4">About Me</h2>
+                  <p class="mb-4">
+                    You are allowed to modify and use this HTML template for
+                    your personal or business websites.
+                  </p>
+                  <p class="mb-4">
+                    You are NOT allowed to re-distribute this template file on
+                    your site for any reason. Thank you.
+                  </p>
+                  <a
+                    href="#"
+                    id="tm_work_link"
+                    data-linkid="2"
+                    class="tm-link m-0"
+                    >Next</a
+                  >
                 </div>
-                <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
-                    <form action="" method="POST" class="text-lg">
-                        <input type="text" name="name" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Name" required="" />
-                        <input type="email" name="email" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Email" required="" />
-                        <textarea rows="6" name="message" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Message..." required=""></textarea>
-                        <div class="text-right">
-                            <button type="submit" class="text-white hover:text-yellow-500 transition">Send it</button>
-                        </div>                        
-                      </form>
+              </section>
+
+              <!-- Section 2 Work (Gallery) -->
+              <section class="tm-section tm-section-2 mx-auto">
+                <div class="grid tm-gallery">
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/01.jpg" alt="Image 1" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/01.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/02.jpg" alt="Pretty Girl" class="" />
+                    <figcaption>
+                      <h2>
+                        Pretty Girl
+                        <span>Picture</span>
+                      </h2>
+                      <p>Vivamus feugiat, neque sed.</p>
+                      <a href="img/02.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/03.jpg" alt="Red Flowers" class="" />
+                    <figcaption>
+                      <h2>
+                        A bunch of
+                        <span>Red Flower</span>
+                      </h2>
+                      <p>Integer pellentesque nisi iaculis sapien.</p>
+                      <a href="img/03.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/04.jpg" alt="Stairs" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/04.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/05.jpg" alt="Image 5" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/05.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/06.jpg" alt="Image 6" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/06.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/07.jpg" alt="Image 7" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/07.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/08.jpg" alt="Image 8" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/08.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/09.jpg" alt="Image 9" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/09.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/10.jpg" alt="Image 10" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/10.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/11.jpg" alt="Image 11" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/11.jpg">View more</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="effect-goliath tm-gallery-item">
+                    <img src="img/12.jpg" alt="Image 12" class="" />
+                    <figcaption>
+                      <h2>
+                        Thoughtful
+                        <span>Goliath</span>
+                      </h2>
+                      <p>When Goliath comes out, you should run.</p>
+                      <a href="img/12.jpg">View more</a>
+                    </figcaption>
+                  </figure>
                 </div>
+              </section>
+
+              <!-- Section 3 Contact -->
+              <section class="tm-section tm-section-3 tm-section-left">
+                <form action="" class="tm-contact-form" method="post">
+                  <div class="form-group mb-4">
+                    <input
+                      type="text"
+                      id="contact_name"
+                      name="contact_name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <input
+                      type="email"
+                      id="contact_email"
+                      name="contact_email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <textarea
+                      rows="4"
+                      id="contact_message"
+                      name="contact_message"
+                      class="form-control"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="form-group mb-0">
+                    <button type="submit" class="btn tm-send-btn tm-fl-right">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </section>
             </div>
-            <footer class="absolute bottom-0 left-0 w-full">
-                <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
-                    <span>Copyright 2022 Holly Caston Childminding. All rights reserved.</span>
-                    <span class="mt-5 md:mt-0">Design: <a href="https://www.tooplate.com" target="_parent">Tooplate</a></span>
-                </div>                
-            </footer>
-        </div>        
-    </div>    
+          </div>
+        </div>
+      </div>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
+      <div class="tm-bottom-container">
+        <!-- Barcode -->
+        <div class="tm-barcode-box">
+          <img src="img/bar-code.jpg" alt="Bar code" />
+        </div>
+
+        <!-- Footer -->
+        <footer>
+          || Copyright &copy; 2018 Company Name || 
+                  
+        	Design: <a rel="nofollow" href="https://fb.com/tooplate">Tooplate</a> || 
+        
+        </footer>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/background.cycle.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script>
+      let slickInitDone = false;
+      let previousImageId = 0,
+        currentImageId = 0;
+      let pageAlign = "right";
+      let bgCycle;
+      let links;
+      let eachNavLink;
 
-        function checkAndShowHideMenu() {
-            if(window.innerWidth < 768) {
-                $('#tm-nav ul').addClass('hidden');                
-            } else {
-                $('#tm-nav ul').removeClass('hidden');
-            }
+      window.onload = function() {
+        $("body").addClass("loaded");
+      };
+
+      function navLinkClick(e) {
+        if ($(e.target).hasClass("external")) {
+          return;
         }
 
-        $(function(){
-            var tmNav = $('#tm-nav');
-            tmNav.singlePageNav();
+        e.preventDefault();
 
-            checkAndShowHideMenu();
-            window.addEventListener('resize', checkAndShowHideMenu);
+        if ($(e.target).data("align")) {
+          pageAlign = $(e.target).data("align");
+        }
 
-            $('#menu-toggle').click(function(){
-                $('#tm-nav ul').toggleClass('hidden');
-            });
+        // Change bg image
+        previousImageId = currentImageId;
+        currentImageId = $(e.target).data("linkid");
+        bgCycle.cycleToNextImage(previousImageId, currentImageId);
 
-            $('#tm-nav ul li').click(function(){
-                if(window.innerWidth < 768) {
-                    $('#tm-nav ul').addClass('hidden');
-                }                
-            });
+        // Change menu item highlight
+        $(`.tm-nav-item:eq(${previousImageId})`).removeClass("active");
+        $(`.tm-nav-item:eq(${currentImageId})`).addClass("active");
 
-            $(document).scroll(function() {
-                var distanceFromTop = $(document).scrollTop();
-
-                if(distanceFromTop > 100) {
-                    tmNav.addClass('scroll');
-                } else {
-                    tmNav.removeClass('scroll');
-                }
-            });
-            
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
+        // Change page content
+        $(`.tm-section-${previousImageId}`).fadeOut(function(e) {
+          $(`.tm-section-${currentImageId}`).fadeIn();
+          // Gallery
+          if (currentImageId === 2) {
+            setupSlider();
+          }
         });
+
+        adjustFooter();
+      }
+
+      $(document).ready(function() {
+        // Set first page
+        $(".tm-section").fadeOut(0);
+        $(".tm-section-0").fadeIn();
+
+        // Set Background images
+        // https://www.jqueryscript.net/slideshow/Simple-jQuery-Background-Image-Slideshow-with-Fade-Transitions-Background-Cycle.html
+        bgCycle = $("body").backgroundCycle({
+          imageUrls: [
+            "img/photo-02.jpg",
+            "img/photo-03.jpg",
+            "img/photo-04.jpg",
+            "img/photo-05.jpg"
+          ],
+          fadeSpeed: 2000,
+          duration: -1,
+          backgroundSize: SCALING_MODE_COVER
+        });
+
+        eachNavLink = $(".tm-nav-link");
+        links = $(".tm-nav-links");
+
+        // "Menu" open/close
+        if (links.hasClass("open")) {
+          links.fadeIn(0);
+        } else {
+          links.fadeOut(0);
+        }
+
+        $("#tm_about_link").on("click", navLinkClick);
+        $("#tm_work_link").on("click", navLinkClick);
+
+        // Each menu item click
+        eachNavLink.on("click", navLinkClick);
+
+        $(".tm-navbar-menu").click(function(e) {
+          if (links.hasClass("open")) {
+            links.fadeOut();
+          } else {
+            links.fadeIn();
+          }
+
+          links.toggleClass("open");
+        });
+
+        // window resize
+        $(window).resize(function() {
+          // If current page is Gallery page, set it up
+          if (currentImageId === 2) {
+            setupSlider();
+          }
+
+          // Adjust footer
+          adjustFooter();
+        });
+
+        adjustFooter();
+      }); // DOM is ready
+
+      function adjustFooter() {
+        const windowHeight = $(window).height();
+        const topHeight = $(".tm-top-container").height();
+        const middleHeight = $(".tm-content").height();
+        let contentHeight = topHeight + middleHeight;
+
+        if (pageAlign === "left") {
+          contentHeight += $(".tm-bottom-container").height();
+        }
+
+        if (contentHeight > windowHeight) {
+          $(".tm-bottom-container").addClass("tm-static");
+        } else {
+          $(".tm-bottom-container").removeClass("tm-static");
+        }
+      }
+
+      function setupSlider() {
+        let slidesToShow = 4;
+        let slidesToScroll = 2;
+        let windowWidth = $(window).width();
+
+        if (windowWidth < 480) {
+          slidesToShow = 1;
+          slidesToScroll = 1;
+        } else if (windowWidth < 768) {
+          slidesToShow = 2;
+          slidesToScroll = 1;
+        } else if (windowWidth < 992) {
+          slidesToShow = 3;
+          slidesToScroll = 2;
+        }
+
+        if (slickInitDone) {
+          $(".tm-gallery").slick("unslick");
+        }
+
+        slickInitDone = true;
+
+        $(".tm-gallery").slick({
+          dots: true,
+          customPaging: function(slider, i) {
+            var thumb = $(slider.$slides[i]).data();
+            return `<a>${i + 1}</a>`;
+          },
+          infinite: true,
+          prevArrow: false,
+          nextArrow: false,
+          slidesToShow: slidesToShow,
+          slidesToScroll: slidesToScroll
+        });
+
+        // Open big image when a gallery image is clicked.
+        $(".slick-list").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: {
+            enabled: true
+          }
+        });
+      }
     </script>
-</body>
+  </body>
 </html>

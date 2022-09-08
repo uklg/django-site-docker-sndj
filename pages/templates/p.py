@@ -9,6 +9,7 @@ lines=open('index.html.source','r').readlines()
 #sys.exit()
 
 filelines=[]
+filelines=filelines+['''{% load static %}\n''']
 
 
 def update_with_static(line,pattern='"',type='js'):
@@ -26,7 +27,6 @@ def update_with_static(line,pattern='"',type='js'):
  		occurances=occurances[0:2]
 
 
-
 	first=occurances[0]
 	second=occurances[1]
 	aftersecond=occurances[1]+1
@@ -36,6 +36,7 @@ def update_with_static(line,pattern='"',type='js'):
 	au3=au2+'%}"'+t[second+1:]
 	#print(repr(au3))
 	return au3
+
 
 
 for line in lines:

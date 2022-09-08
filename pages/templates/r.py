@@ -35,6 +35,9 @@ au2=au+t[first:second+1]
 
 print(repr(au2))
 
-au3=au2+t[second+1:]
+au3=au2+'%}"'+t[second+1:]
 
 print(repr(au3))
+
+
+

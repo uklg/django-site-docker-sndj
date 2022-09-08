@@ -25,4 +25,13 @@ fd.writelines(filelines)
 fd.close()
 
 
+"""
+$ is enter
+^M is carriage return
+
+head -n1 index.html.source|cat -te
+<!DOCTYPE html>^M$
+
+ head -n1 index.html|cat -te
+<!DOCTYPE html>^M$
 

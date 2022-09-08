@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+This converts a html file to be compatible with static files and was used completely successfully to
+produce index.html from index.html.source
+"""
+
+
 import sys,os,re
 
 lines=open('index.html.source','r').readlines()
@@ -14,7 +20,8 @@ filelines=filelines+['''{% load static %}\n''']
 
 def update_with_static(line,pattern='"',type='js'):
 	t=line
-	# find string occurances maybe later only find first or last ones
+	# find all string occurances
+	# maybe later only find first or last ones
 	occurances=[m.start() for m in re.finditer(pattern, t)]
 	if type=='js':
 		occurances=occurances[0:2]

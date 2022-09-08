@@ -16,10 +16,14 @@ def update_with_static(line,pattern='"',type='js'):
 	# find string occurances maybe later only find first or last ones
 	occurances=[m.start() for m in re.finditer(pattern, t)]
 	if type=='js':
-		occurances=occurances
+		occurances=occurances[0:2]
 	if type=='css':
 		# ignore first set of speechmarks
 		occurances=occurances[2:]
+
+	if type=='jpg':
+		# Only use the first set of speechmarks
+ 		occurances=occurances[0:2]
 
 
 
@@ -41,6 +45,8 @@ for line in lines:
 		line=update_with_static(line,type='js')
 	if '.css' in line:
 		line=update_with_static(line,type='css')
+	if '.jpg' in line:
+		line=update_with_static(line,type='jpg')
 
 	linewithcarriagereturn=str.replace(line, '\n', '\r\n')
 	filelines.append(linewithcarriagereturn)

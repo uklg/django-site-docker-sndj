@@ -15,12 +15,12 @@ http://www.tooplate.com/view/2109-the-card
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
     />
     <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css"%}" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="{% static "slick/slick.css"%}" />
-    <link rel="stylesheet" href="{% static "slick/slick-theme.css"%}" />
-    <link rel="stylesheet" href="{% static "css/magnific-popup.css"%}" />
-    <link rel="stylesheet" href="{% static "css/tooplate-style.css"%}" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/tooplate-style.css" />
     <!-- Templatemo style -->
   </head>
 
@@ -117,135 +117,135 @@ http://www.tooplate.com/view/2109-the-card
               <section class="tm-section tm-section-2 mx-auto">
                 <div class="grid tm-gallery">
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/01.jpg"%}" alt="Image 1" class="" />
+                    <img src="img/01.jpg" alt="Image 1" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/01.jpg"%}">View more</a>
+                      <a href="img/01.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/02.jpg"%}" alt="Pretty Girl" class="" />
+                    <img src="img/02.jpg" alt="Pretty Girl" class="" />
                     <figcaption>
                       <h2>
                         Pretty Girl
                         <span>Picture</span>
                       </h2>
                       <p>Vivamus feugiat, neque sed.</p>
-                      <a href="{% static "img/02.jpg"%}">View more</a>
+                      <a href="img/02.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/03.jpg"%}" alt="Red Flowers" class="" />
+                    <img src="img/03.jpg" alt="Red Flowers" class="" />
                     <figcaption>
                       <h2>
                         A bunch of
                         <span>Red Flower</span>
                       </h2>
                       <p>Integer pellentesque nisi iaculis sapien.</p>
-                      <a href="{% static "img/03.jpg"%}">View more</a>
+                      <a href="img/03.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/04.jpg"%}" alt="Stairs" class="" />
+                    <img src="img/04.jpg" alt="Stairs" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/04.jpg"%}">View more</a>
+                      <a href="img/04.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/05.jpg"%}" alt="Image 5" class="" />
+                    <img src="img/05.jpg" alt="Image 5" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/05.jpg"%}">View more</a>
+                      <a href="img/05.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/06.jpg"%}" alt="Image 6" class="" />
+                    <img src="img/06.jpg" alt="Image 6" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/06.jpg"%}">View more</a>
+                      <a href="img/06.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/07.jpg"%}" alt="Image 7" class="" />
+                    <img src="img/07.jpg" alt="Image 7" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/07.jpg"%}">View more</a>
+                      <a href="img/07.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/08.jpg"%}" alt="Image 8" class="" />
+                    <img src="img/08.jpg" alt="Image 8" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/08.jpg"%}">View more</a>
+                      <a href="img/08.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/09.jpg"%}" alt="Image 9" class="" />
+                    <img src="img/09.jpg" alt="Image 9" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/09.jpg"%}">View more</a>
+                      <a href="img/09.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/10.jpg"%}" alt="Image 10" class="" />
+                    <img src="img/10.jpg" alt="Image 10" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/10.jpg"%}">View more</a>
+                      <a href="img/10.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/11.jpg"%}" alt="Image 11" class="" />
+                    <img src="img/11.jpg" alt="Image 11" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/11.jpg"%}">View more</a>
+                      <a href="img/11.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static "img/12.jpg"%}" alt="Image 12" class="" />
+                    <img src="img/12.jpg" alt="Image 12" class="" />
                     <figcaption>
                       <h2>
                         Thoughtful
                         <span>Goliath</span>
                       </h2>
                       <p>When Goliath comes out, you should run.</p>
-                      <a href="{% static "img/12.jpg"%}">View more</a>
+                      <a href="img/12.jpg">View more</a>
                     </figcaption>
                   </figure>
                 </div>
@@ -299,7 +299,7 @@ http://www.tooplate.com/view/2109-the-card
       <div class="tm-bottom-container">
         <!-- Barcode -->
         <div class="tm-barcode-box">
-          <img src="{% static "img/bar-code.jpg"%}" alt="Bar code" />
+          <img src="img/bar-code.jpg" alt="Bar code" />
         </div>
 
         <!-- Footer -->
@@ -312,10 +312,10 @@ http://www.tooplate.com/view/2109-the-card
       </div>
     </div>
 
-    <script src="{% static "js/jquery-1.11.0.min.js"%}"></script>
-    <script src="{% static "js/background.cycle.js"%}"></script>
-    <script src="{% static "slick/slick.min.js"%}"></script>
-    <script src="{% static "js/jquery.magnific-popup.min.js"%}"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/background.cycle.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script>
       let slickInitDone = false;
       let previousImageId = 0,
@@ -370,10 +370,10 @@ http://www.tooplate.com/view/2109-the-card
         // https://www.jqueryscript.net/slideshow/Simple-jQuery-Background-Image-Slideshow-with-Fade-Transitions-Background-Cycle.html
         bgCycle = $("body").backgroundCycle({
           imageUrls: [
-            "{% static "img/photo-02.jpg"%}",
-            "{% static "img/photo-03.jpg"%}",
-            "{% static "img/photo-04.jpg"%}",
-            "{% static "img/photo-05.jpg"%}"
+            "img/photo-02.jpg",
+            "img/photo-03.jpg",
+            "img/photo-04.jpg",
+            "img/photo-05.jpg"
           ],
           fadeSpeed: 2000,
           duration: -1,

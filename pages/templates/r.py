@@ -19,14 +19,22 @@ print(occurances)
 
 
 first=occurances[0]
-last=occurances[1]
+second=occurances[1]
+aftersecond=occurances[1]+1
 
 u=t[:first]
 
 print(repr(u))
 
-au=t[:first]+'"{%'
+au=t[:first]+'"{% static '
 
 print(repr(au))
 
 
+au2=au+t[first:second+1]
+
+print(repr(au2))
+
+au3=au2+t[second+1:]
+
+print(repr(au3))

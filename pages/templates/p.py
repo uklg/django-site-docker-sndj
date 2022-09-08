@@ -11,10 +11,18 @@ lines=open('index.html.source','r').readlines()
 filelines=[]
 
 
-def update_with_static(line,pattern='"'):
+def update_with_static(line,pattern='"',type='js'):
 	t=line
 	# find string occurances maybe later only find first or last ones
 	occurances=[m.start() for m in re.finditer(pattern, t)]
+	if type=='js':
+		occurances=occurances
+	if type=='css':
+		# ignore first set of speechmarks
+		occurances=occurances[2:]
+
+
+
 	first=occurances[0]
 	second=occurances[1]
 	aftersecond=occurances[1]+1
@@ -30,7 +38,10 @@ for line in lines:
 	# make the lines the same as for the source 
 	# print(repr(line))
 	if '.js' in line:
-		line=update_with_static(line)
+		line=update_with_static(line,type='js')
+	if '.css' in line:
+		line=update_with_static(line,type='css')
+
 	linewithcarriagereturn=str.replace(line, '\n', '\r\n')
 	filelines.append(linewithcarriagereturn)
 	# print(repr(linewithcarriagereturn))

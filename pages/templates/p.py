@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import sys
+import sys,os
 
 lines=open('index.html.source','r').readlines()
 
@@ -24,6 +24,8 @@ fd.writelines(filelines)
 
 fd.close()
 
+print('running diff on index.html and index.html.source')
+os.system('diff index.html index.html.source')
 
 """
 $ is enter
@@ -34,4 +36,6 @@ head -n1 index.html.source|cat -te
 
  head -n1 index.html|cat -te
 <!DOCTYPE html>^M$
+"""
+
 

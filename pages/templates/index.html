@@ -254,12 +254,12 @@ http://www.tooplate.com/view/2109-the-card
 
               <!-- Section 3 Contact -->
               <section class="tm-section tm-section-3 tm-section-left">
-                   <form action="" method="POST" class="text-lg">
+                   <form action="" method="POST" class="tm-contact-form">
                     {% csrf_token %}
                     {{ form.as_p }}
 
                         <div class="text-right">
-                            <button type="submit" class="text-white hover:text-yellow-500 transition">Send it</button>
+                            <button type="submit" class="btn tm-send-btn tm-fl-right">Send it</button>
                         </div>
                       </form>
 

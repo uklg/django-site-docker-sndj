@@ -21,4 +21,4 @@ class ContactForm(forms.Form):
 							'placeholder':'Your Message',
 							#'style':'width: 300px;',
                                                         #'rows':6,
-							'class': 'btn tm-send-btn tm-fl-right'}), required=False)
+							'class': 'form-control'}), required=False)

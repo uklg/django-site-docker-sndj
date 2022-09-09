@@ -20,5 +20,5 @@ class ContactForm(forms.Form):
     submit_message = forms.CharField(label='',widget=forms.Textarea(attrs={
 							'placeholder':'Your Message',
 							#'style':'width: 300px;',
-                                                        'rows':6,
+                                                        #'rows':6,
 							'class': 'btn tm-send-btn tm-fl-right'}), required=False)

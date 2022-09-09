@@ -23,6 +23,8 @@ fixes
 forms error (wrong version of django - fixed now)
 
 
+if css does not update then remove staticfiles dir from server republish and restart app
+
 
 
 

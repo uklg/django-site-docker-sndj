@@ -2,6 +2,7 @@
 
 
 projectname=sndj-test
+accessport=8002
 
 docker stop ${projectname}
 docker rm ${projectname}
@@ -50,7 +51,7 @@ docker exec -it ${projectname} /code/start.sh
 
 
 echo 'css may take a while to start so wait 5 seconds'
-firefox http://127.0.0.1:8002/
+firefox http://127.0.0.1:${accessport}/
 
-firefox http://127.0.0.1:8002/admin/
+firefox http://127.0.0.1:${accessport}/admin/
 

@@ -46,12 +46,20 @@ docker-compose up --build -d
 
 docker exec -it ${projectname} /code/start.sh
 
+echo running test to see if string is present at the newly spun up site:
+curl -L 127.0.0.1:${accessport} | grep "Professional wedding DJ" ;echo exit code: $(echo $?)
 
-
+echo running test to see if string is present at the newly pun up Admin site:
+curl -L 127.0.0.1:${accessport}/admin | grep "Django administration" ;echo exit code: $(echo $?)
 
 
 echo 'css may take a while to start so wait 5 seconds'
-firefox http://127.0.0.1:${accessport}/
 
-firefox http://127.0.0.1:${accessport}/admin/
+
+
+firefox --private-window http://127.0.0.1:${accessport}/
+
+echo admin may need their own browser space for cookies to work:
+
+firefox --private-window http://127.0.0.1:${accessport}/admin/
 

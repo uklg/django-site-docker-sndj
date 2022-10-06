@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -49,34 +49,35 @@
               <a href="#" onclick="scrolltoDiv('aboutDiv')"  data-linkid="0" data-align="right" class="tm-nav-link">About</a>
             </li>
             <li class="tm-nav-item">
-              <a href="#" data-linkid="1" data-align="right" class="tm-nav-link">References</a>
+              <a onclick="scrolltoDiv('referencesDiv')" href="#" data-linkid="1" data-align="right" class="tm-nav-link">References</a>
             </li>
             <li class="tm-nav-item">
               <a
+                onclick="scrolltoDiv('galleryDiv')"
                 href="#"
                 data-linkid="2"
                 data-align="middle"
                 class="tm-nav-link">Gallery</a>
             </li>
             <li class="tm-nav-item">
-              <a href="#" data-linkid="3" data-align="left" class="tm-nav-link">Contact</a>
+              <a onclick="scrolltoDiv('contactDiv')" href="#" data-linkid="3" data-align="left" class="tm-nav-link">Contact</a>
             </li>
           </ul>
         </nav>
 
         <!-- Site header -->
         <header class="tm-site-header-box tm-bg-dark">
-           <img src="{% static "img/dj-clipart-dj-booth-16-200-200.gif"%}" alt="Saturday Night DJ">
+           <img src="{% static "img/dj-clipart-dj-booth-16-300-300.gif"%}" alt="Saturday Night DJ">
           <p class="mb-0 tm-site-subtitle">High quality eclectic DJ</p>
         </header>
       </div>
       <!-- tm-top-container -->
 
-      <div id="aboutDiv" class="container-fluid">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
             <!-- Site content -->
-            <div class="tm-content">
+            <div id="aboutDiv" class="tm-content">
               <!-- Section 0 Introduction -->
               <section class="tm-section tm-section-0">
                 <h2 class="tm-section-title mb-3 font-weight-bold">
@@ -104,7 +105,7 @@
 
               <!-- Section 1 References -->
               <section class="tm-section tm-section-1">
-                <div class="tm-textbox tm-textbox-2 tm-bg-dark">
+                <div id="referencesDiv" class="tm-textbox tm-textbox-2 tm-bg-dark">
                   <h2 class="tm-text-blue mb-4">References</h2>
                   <p class="mb-4">
                     Saturday Night DJ was fantastic for my daughter's birthday 
@@ -127,7 +128,7 @@
                   >
                 </div>
               </section>
-
+                <div id="galleryDiv"></div>
               <!-- Section 2 Work (Gallery) -->
               <section class="tm-section tm-section-2 mx-auto">
                 <div class="grid tm-gallery">
@@ -267,11 +268,12 @@
               </section>
 
               <!-- Section 3 Contact -->
+              <div id="contactDiv">
               <section class="tm-section tm-section-3 tm-section-left">
                    <form action="" method="POST" class="tm-contact-form">
                     {% csrf_token %}
                     {{ form.as_p }}
-
+              </div>
                         <div class="text-right">
                             <button onclick="confirmReceiptFunction()" type="submit" class="btn tm-send-btn tm-fl-right">Send it</button>
                         </div>

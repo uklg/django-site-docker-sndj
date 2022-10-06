@@ -1,0 +1,37 @@
+TASK [sharedhost : Git checkout of repos (force)] *****************************************************
+
+
+failed: [saturdaynightdj.co.uk] (item={'name': 'test8.saturdaynightdj.co.uk', 'proxy': 8014, 'repo': 'https://github.com/uklg/django-site-docker-sndj.git', 'appname': 'django-contact-us', 'forcereinstall': True}) => {"ansible_loop_var": "item", "before": "a9f78d848ed0d5cc6a81752c314bad95bb7e4d28", "changed": false, "item": {"appname": "django-contact-us", "forcereinstall": true, "name": "test8.saturdaynightdj.co.uk", "proxy": 8014, "repo": "https://github.com/uklg/django-site-docker-sndj.git"}, "msg": "Local modifications exist in repository (force=no)."
+
+could force remove or force reinstall
+
+
+https://dancefloors4djs.co.uk/
+
+
+https://dancefloors4djs.co.uk
+
+these are in kent and hire directly to djs at good rates so can add a dance floor
+
+https://www.facebook.com/www.powersoundsdiscos.co.uk/
+
+https://powersoundsdiscos.co.uk/mobile-discos-sidcup/
+
+this has pictures only on website
+
+it has good lighting 
+
+
+
+
+find some dj equipment second hand with lighing if at all possible in vgc
+
+there is a link with pro and startup and intermediate setup very good to look at
+
+smoke machine
+
+lasers
+
+led lights all good to look at
+
+

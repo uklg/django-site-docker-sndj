@@ -22,6 +22,11 @@
   </head>
 
   <body>
+  <script>
+  function confirmReceiptFunction() {
+    alert("Thank you. We have received your message.");
+  }
+  </script>
     <!-- Loader -->
     <div id="loader-wrapper">
       <div id="loader"></div>
@@ -263,7 +268,7 @@
                     {{ form.as_p }}
 
                         <div class="text-right">
-                            <button type="submit" class="btn tm-send-btn tm-fl-right">Send it</button>
+                            <button onclick="confirmReceiptFunction()" type="submit" class="btn tm-send-btn tm-fl-right">Send it</button>
                         </div>
                       </form>
 

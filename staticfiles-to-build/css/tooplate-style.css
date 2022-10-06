@@ -10,11 +10,12 @@ http://www.tooplate.com/view/2109-the-card
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 19px;
+  font-size: 12px;
   color: #ffffff;
   overflow-x: hidden;
   background: #25332e;
 }
+
 
 a {
   transition: all 0.2s;
@@ -57,7 +58,7 @@ footer a:link, footer a:visited {
 }
 
 .tm-nav {
-  margin: 30px;
+  margin: 10px;
   text-transform: uppercase;
 }
 
@@ -184,8 +185,9 @@ footer {
 
 /* Image Gallery */
 .tm-gallery {
-  max-width: 860px;
+  max-width: 560px;
   margin: 0 auto;
+  font-size: 19px;
 }
 
 .tm-gallery-item {

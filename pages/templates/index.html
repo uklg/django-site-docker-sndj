@@ -267,13 +267,11 @@
               </section>
 
               <!-- Section 3 Contact -->
-              <div id="contactDiv">
               <section class="tm-section tm-section-3 tm-section-left">
                    <form action="" method="POST" class="tm-contact-form">
                     {% csrf_token %}
                     {{ form.as_p }}
-              </div>
-                        <div class="text-right">
+                        <div id="contactDiv" class="text-right">
                             <button onclick="confirmReceiptFunction()" type="submit" class="btn tm-send-btn tm-fl-right">Send it</button>
                         </div>
                       </form>
